@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item
+            android:id="@+id/homeFragment"
+            android:icon="@drawable/home"
+            android:iconTint="@color/white"
+            android:title="Home" />
+        <item
+            android:id="@+id/bookFragment"
+            android:icon="@drawable/trainimg"
+            android:iconTint="@color/white"
+            android:title="Book" />
+        <item
+            android:id="@+id/liveFragment"
+            android:icon="@drawable/nlp"
+            android:iconTint="@color/white"
+            android:title="Live" />
+        <item
+            android:id="@+id/profileFragment"
+            android:icon="@drawable/proflieicon"
+            android:iconTint="@color/white"
+            android:title="Profile" />
+
+
+
+</menu>

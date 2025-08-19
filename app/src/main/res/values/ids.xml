@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="searchResultsListView" type="id" />
+    <item name="container" type="id" />
+    <item name="station_text" type="id" />
+    <item name="searchButton" type="id" />
+    <item name="searchEditText" type="id" />
+    <item name="login_text" type="id" />
+</resources>

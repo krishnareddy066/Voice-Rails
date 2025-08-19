@@ -1,0 +1,104 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:orientation="vertical"
+    android:background="@color/black"
+    tools:context=".BookFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+      <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+          android:layout_marginTop="20sp"
+          android:layout_marginLeft="60sp"
+          android:layout_marginBottom="20sp"
+        android:src="@drawable/ic_book" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:text="Train Bookings"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+
+
+    <!-- From Station Input -->
+    <EditText
+        android:id="@+id/etFromStation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:hint="From Station"
+        android:inputType="text"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- To Station Input -->
+    <EditText
+        android:id="@+id/etToStation"
+        android:layout_width="match_parent"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:layout_height="wrap_content"
+        android:hint="To Station"
+        android:inputType="text"
+        android:layout_below="@id/etFromStation"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Passenger Name Input -->
+    <EditText
+        android:id="@+id/etPassengerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:layout_marginTop="20sp"
+        android:hint="Passenger Name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/etToStation"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Date Picker -->
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Date (dd/mm/yyyy)"
+        android:layout_marginTop="20sp"
+        android:textColorHint="@color/white"
+        android:textColor="@color/white"
+        android:inputType="date"
+        android:layout_below="@id/etPassengerName"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Booking Button -->
+    <Button
+        android:id="@+id/btnBookTicket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Book Ticket"
+        android:backgroundTint="@color/orange"
+        android:layout_marginTop="20sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_below="@id/etDate"
+        android:layout_centerHorizontal="true"/>
+</LinearLayout>

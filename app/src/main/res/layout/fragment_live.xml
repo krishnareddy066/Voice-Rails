@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1B1B"
+    tools:context=".LiveFragment">
+
+    <!-- Live Announcements TextView -->
+    <TextView
+        android:id="@+id/tvLiveAnnouncements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Announcements"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawablePadding="8dp"
+        app:drawableStartCompat="@drawable/red_dot"
+        android:contentDescription="Live Announcements Title"/>
+
+    <!-- RadioGroup for Text and Audio buttons -->
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvLiveAnnouncements"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <!-- Button for Text -->
+        <Button
+            android:id="@+id/btnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="#000000"
+            android:backgroundTint="#FFFFFF"
+            android:contentDescription="Text Button"/>
+
+        <!-- Button for Audio -->
+        <Button
+            android:id="@+id/btnAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:text="Audio"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            android:contentDescription="Audio Button"/>
+    </RadioGroup>
+
+    <!-- EditText for input text -->
+    <EditText
+        android:id="@+id/inputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter text to translate"
+        android:textColor="#FFFFFF"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:contentDescription="Input text to translate"/>
+
+    <!-- Spinner for selecting language -->
+    <Spinner
+        android:id="@+id/languageSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/inputText"
+        android:layout_marginTop="16dp"
+        android:padding="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:popupBackground="#1B1B1B"
+        android:contentDescription="Select Language Spinner"/>
+
+    <!-- Translate Button -->
+    <Button
+        android:id="@+id/translateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Translate"
+        android:textColor="#000000"
+        android:layout_below="@id/languageSpinner"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#5DB3F8"
+        android:contentDescription="Translate Button"/>
+
+    <!-- Speak Button -->
+    <Button
+        android:id="@+id/speakButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Speak"
+        android:textColor="#000000"
+        android:layout_below="@id/translateButton"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#498DC3"
+        android:contentDescription="Speak Button"/>
+
+    <!-- Output Text View -->
+    <TextView
+        android:id="@+id/outputText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:paddingTop="30dp"
+        android:layout_below="@id/speakButton"
+        android:contentDescription="Translated Text Output"/>
+
+
+
+
+
+
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/profileFragment"
+        android:icon="@drawable/male"
+        android:iconTint="@color/white"
+        android:title="Edit profile" />
+</menu>

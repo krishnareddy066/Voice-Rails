@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    android:background="#1B1B1B">
+
+    <TextView
+        android:id="@+id/tvLiveAnnouncements"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Live Announcements"
+        android:textSize="24sp"
+        android:textColor="#FFFFFF"
+        android:layout_margin="16dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:drawableStart="@drawable/red_dot"
+        android:drawablePadding="8dp"
+        tools:ignore="HardcodedText,UseCompatTextViewDrawableXml" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/tvLiveAnnouncements"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp">
+
+        <Button
+            android:id="@+id/btnText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#000000"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/btnAudio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="Audio"
+            android:textColor="#000000"
+            android:backgroundTint="#FFFFFF"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvLiveAnnouncement"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/radioGroup"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="8dp"
+        android:ellipsize="marquee"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:freezesText="true"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:padding="10dp"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:text="Latest Announcement"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        tools:ignore="HardcodedText" />
+
+    <ListView
+        android:id="@+id/listViewAnnouncements"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvLiveAnnouncement"
+        android:layout_marginTop="15dp"
+        android:divider="#ffffff"
+        android:dividerHeight="1dp"
+        android:padding="16dp" />
+
+    <Button
+        android:id="@+id/buttonGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Go back"
+        android:backgroundTint="#FF4F00"
+        android:textColor="#FFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        tools:ignore="HardcodedText" />
+</RelativeLayout>

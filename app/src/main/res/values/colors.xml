@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#1B1B1B</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="orange">#FF4F00</color>
+    <color name="blue">#B0D2FF</color>
+    <color name="mainclr">#161429</color>
+
+    <color name="your_background_color">#FFEB3B</color> <!-- Example color -->
+        <!-- Add other colors here -->
+
+    <color name="darker_gray">#2F3133</color>
+</resources>
